@@ -1,0 +1,47 @@
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+label,
+.input-label,
+select {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+#fecha_vuelta_container {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  form {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  form {
+    width: 30%;
+  }
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-right: 1rem;
+}

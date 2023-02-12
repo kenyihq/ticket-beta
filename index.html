@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rumbos y Mundos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <h2>Datos del Vuelo</h2>
+        <label for="radio1">
+          <input type="radio" id="radio1" name="tipoVuelo" value="oneWay" />Ida
+        </label>
+        <label for="radio1">
+          <input
+            type="radio"
+            id="radio1"
+            name="tipoVuelo"
+            value="roundTrip"
+          />Ida y vuelta
+        </label>
+
+        <div>
+          <label for="">Ciudad y/o aeropuerto de origen</label>
+          <input
+            class="input-label"
+            id="get-origin"
+            list="origin"
+            placeholder="Igrese la ciudad y/o aeropuerto de origen"
+            required
+          />
+          <datalist id="origin"></datalist>
+        </div>
+        <div>
+          <label for="">Ciudad y/o aeropuerto de destino</label>
+          <input
+            class="input-label"
+            id="get-destination"
+            list="destination"
+            placeholder="Igrese la ciudad y/o aeropuerto de destino"
+            required
+          />
+          <datalist id="destination"></datalist>
+        </div>
+        <div>
+          <label for="fecha_ida">Fecha de ida:</label>
+          <input
+            class="input-label"
+            type="date"
+            id="fecha_ida"
+            name="fecha_ida"
+          />
+        </div>
+        <div>
+          <label for="hora">Hora:</label>
+          <input class="input-label" type="time" id="hora" name="hora" />
+        </div>
+         <div>
+          <label for="fecha_ida">Fecha de vuelta:</label>
+          <input
+            class="input-label"
+            type="date"
+            id="fecha_ida"
+            name="fecha_ida"
+          />
+        </div>
+        <div id="fecha_vuelta_container">
+          <label for="fecha_vuelta">Fecha de vuelta:</label>
+          <input
+            class="input-label"
+            type="date"
+            id="fecha_vuelta"
+            name="fecha_vuelta"
+          />
+        </div>
+        <div>
+          <label for="hora">Hora:</label>
+          <input class="input-label" type="time" id="hora" name="hora" />
+        </div>
+        <div>
+          <label for="equipaje">
+            <input type="radio" id="equipaje" name="equipaje" />
+            Solo mochila
+          </label>
+        </div>
+        <div>
+          <label for="pasajeros">Número de pasajeros:</label>
+          <input
+            class="input-label"
+            type="number"
+            id="pasajeros"
+            name="pasajeros"
+          />
+        </div>
+        <div>
+          <label for="precio">Precio del pasaje (USD):</label>
+          <input class="input-label" type="number" id="precio" name="precio" />
+        </div>
+        <div>
+          <label for="">Aerolinea</label>
+          <input
+            class="input-label"
+            list="airline"
+            placeholder="Igrese la aerolinea"
+            required
+          />
+          <datalist id="airline"></datalist>
+        </div>
+        <h2>Datos del Pasajero</h2>
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input class="input-label" type="text" id="nombre" />
+        </div>
+        <div>
+          <label for="dni">DNI:</label>
+          <input class="input-label" type="text" id="dni" name="dni" />
+        </div>
+        <div>
+          <label for="telefono">Teléfono:</label>
+          <input
+            class="input-label"
+            type="text"
+            id="telefono"
+            name="telefono"
+          />
+        </div>
+        <div>
+          <input class="input-label" type="submit" value="Generar" />
+        </div>
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
